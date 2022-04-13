@@ -1,2 +1,6 @@
+# IntelliJ
+.idea/
+.bsp/
+target/
 *.class
 *.log
