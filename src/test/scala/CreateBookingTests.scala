@@ -80,7 +80,9 @@ class CreateBookingTests extends AnyFunSuite with BaseConfiguration with BeforeA
     val newBooking = BookingRequestBuilder(Faker.default.firstName(),
       Faker.default.lastName(),
       110, depositpaid = true,
-      BookingDates(Faker.default.nowLocalDateTime().minusDays(5L).format(DateTimeFormatter.ISO_DATE), Faker.default.nowLocalDateTime().format(DateTimeFormatter.ISO_DATE)),
+      BookingDates(
+        Faker.default.nowLocalDateTime().minusDays(5L).format(DateTimeFormatter.ISO_DATE),
+        Faker.default.nowLocalDateTime().format(DateTimeFormatter.ISO_DATE)),
       Faker.default.buzzWord())
 
     mapper.writeValueAsString(newBooking)
