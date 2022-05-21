@@ -11,7 +11,6 @@ class CreateTokenTests extends AnyFunSuite with BaseConfiguration with BeforeAnd
 
   override def beforeAll(): Unit = {
     setupContext("auth")
-    val mapper = JsonMapper.builder().addModule(DefaultScalaModule).build()
   }
 
   test("Create Token with correct values") {

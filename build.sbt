@@ -9,8 +9,8 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.11"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.11" % "test"
 
 // Rest Assured
-libraryDependencies += "io.rest-assured" % "rest-assured" % "5.0.1" % Test
-libraryDependencies += "io.rest-assured" % "scala-support" % "5.0.1" % Test
+libraryDependencies += "io.rest-assured" % "rest-assured" % "4.4.0" % Test
+libraryDependencies += "io.rest-assured" % "scala-support" % "4.4.0" % Test
 
 // Jackson Databind
 libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.13.2.2"

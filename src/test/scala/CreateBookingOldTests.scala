@@ -13,7 +13,7 @@ import org.scalatest.matchers.should.Matchers.{convertToAnyShouldWrapper, equal}
 
 import java.time.format.DateTimeFormatter
 
-class CreateBookingTests extends AnyFunSuite with BaseConfiguration with BeforeAndAfterAll{
+class CreateBookingOldTests extends AnyFunSuite with BaseConfiguration with BeforeAndAfterAll{
 
   /** BeforeAll Method
    * We use this method to configure or prepare values
