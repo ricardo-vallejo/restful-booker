@@ -28,4 +28,11 @@ libraryDependencies += "io.github.etspaceman" %% "scalacheck-faker" % "7.0.0"
 
 // Allure
 libraryDependencies += "io.qameta.allure" % "allure-rest-assured" % "2.17.3"
-libraryDependencies += "io.qameta.allure" % "allure-scalatest" % "2.17.3"
+libraryDependencies += "io.qameta.allure" % "allure-scalatest" % "2.17.3" % Test
+
+resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+
+Test / testOptions ++= Seq(
+  Tests.Argument(TestFrameworks.ScalaTest, "-oD"),
+  Tests.Argument(TestFrameworks.ScalaTest, "-C", "io.qameta.allure.scalatest.AllureScalatest")
+)

@@ -4,3 +4,7 @@
 target/
 *.class
 *.log
+
+# Allure
+allure-report/
+allure-results/
